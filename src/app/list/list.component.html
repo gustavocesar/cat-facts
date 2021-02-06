@@ -1,0 +1,7 @@
+<p *ngIf="facts.length === 0">Carregando...</p>
+
+<mat-selection-list #factsList>
+  <mat-list-item *ngFor="let fact of facts">
+    {{ fact.text }}
+  </mat-list-item>
+</mat-selection-list>
